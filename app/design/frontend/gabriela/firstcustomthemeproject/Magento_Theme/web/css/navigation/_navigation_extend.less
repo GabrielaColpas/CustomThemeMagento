@@ -1,0 +1,45 @@
+.nav-sections{
+    margin-bottom: 10px;
+    background-color: #734951;
+}
+.navigation{
+    background-color: #734951;
+    ul{
+        text-align: center;
+    }
+    li.level0{
+        padding-right: 40px;
+
+        .level-top{
+            color: #fff;
+
+            &:hover{
+                color: #fff;
+            }
+        } 
+    }
+    .level0{
+        &.active,
+        &.has-active{
+            .level-top{
+                border-color: #BF2A45;
+                color: #fff;
+            }
+        }
+
+        .parent > .level-top > .ui-menu-icon{
+            display: none;
+        }
+        .submenu{
+            border-radius: 10px;
+
+            .active > a{
+                border-color: #BF2A45;
+            }
+        }
+        .level-top:hover{
+            color: #402F2D;
+            transform: translateY(-1px);
+        }
+    }
+}

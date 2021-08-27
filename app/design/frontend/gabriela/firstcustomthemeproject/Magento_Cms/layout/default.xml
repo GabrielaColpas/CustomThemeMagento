@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="cms_footer_links_container">
+            <block class="Magento\Framework\View\Element\Html\Links" name="footer_links_new">
+                    <arguments>
+                        <argument name="css_class" xsi:type="string">footer links</argument>
+                    </arguments>
+            </block>
+        </referenceContainer>
+        <referenceBlock name="footer_links_new">
+            <block class="Magento\Framework\View\Element\Html\Link\Current" name="contact-us-link">
+                <arguments>
+                    <argument name="label" xsi:type="string" translate="true">Contact Us</argument>
+                    <argument name="path" xsi:type="string">contact</argument>
+                </arguments>
+            </block>
+            <block class="Magento\Framework\View\Element\Html\Link\Current" name="catalog-search-advanced-link">
+                <arguments>
+                    <argument name="label" xsi:type="string" translate="true">Advanced Search</argument>
+                    <argument name="path" xsi:type="string">catalogsearch/advanced</argument>
+                </arguments>
+            </block>
+            <block class="Magento\Framework\View\Element\Html\Link\Current" name="first-project-carrer">
+                <arguments>
+                    <argument name="label" xsi:type="string" translate="true">Carrer</argument>
+                    <argument name="path" xsi:type="string">catalogsearch/advanced</argument>
+                </arguments>
+            </block>
+        </referenceBlock>
+    </body>
+</page>
